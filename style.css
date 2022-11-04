@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1645226880663-81561dcab0ae?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80");
+}
+
+input {
+  display: block;
+  margin-bottom: 15px;
+  background: transparent;
+  width: 200px;
+  padding: 0.4rem;
+  border-radius: 0.3rem;
+  border: 1px solid white;
+  color: aliceblue;
+}
+
+input::placeholder {
+  color: white;
+}
+
+#outer-container {
+  max-width: 1100px;
+  margin: 1rem auto 0;
+  padding: 4rem 0rem;
+  border-radius: 1rem;
+}
+
+#container {
+  color: white;
+  padding: 2rem 2rem 0;
+  max-width: 1000px;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 1rem;
+}
+
+.container-left {
+  max-width: 50%;
+  padding-bottom: 2rem;
+}
+
+.container-right {
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 0;
+}
+
+img {
+  max-height: 700px;
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 2.1rem;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+button {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: white;
+  color: black;
+  font-weight: 600;
+}
+
+.reset {
+  margin-left: 1rem;
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+}
+
+.footer-header {
+  text-align: center;
+}
+
+@media (max-width: 359px) {
+  #container-right {
+    max-width: 270px;
+    margin: auto;
+    padding: 1rem 0.5rem;
+  }
+
+  #container {
+    max-width: 260px;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .container-left,
+  .container-right {
+    max-width: 220px;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  img {
+    margin-top: 1rem;
+  }
+  input {
+    max-width: 250px;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  #resultText {
+    text-align: center;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+  }
+
+  .reset {
+    margin: 1rem auto 0;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 548px) {
+  #outer-container {
+    max-width: 350px;
+    margin: auto;
+    padding: 1rem 0.8rem;
+  }
+
+  #container {
+    max-width: 340px;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .container-left,
+  .container-right {
+    max-width: 320px;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #resultText {
+    text-align: center;
+  }
+  h1 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  input {
+    max-width: 250px;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+  }
+
+  .reset {
+    margin: 1rem auto 0;
+  }
+}
+
+@media (min-width: 549px) and (max-width: 800px) {
+  #outer-container {
+    max-width: 550px;
+    margin: auto;
+    padding: 1rem 0.8rem;
+  }
+
+  #container {
+    max-width: 540px;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+
+  .container-left,
+  .container-right {
+    max-width: 520px;
+    margin: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #resultText {
+    text-align: center;
+  }
+  h1 {
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+  p,
+  ul {
+    max-width: 400px;
+    margin: 1rem auto;
+  }
+
+  input {
+    max-width: 250px;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+  }
+
+  .reset {
+    margin: 1rem auto 0;
+  }
+}
+
+footer {
+  color: aliceblue;
+  text-align: center;
+  padding-top: 2rem;
+}
